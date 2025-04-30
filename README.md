@@ -66,12 +66,12 @@ Variables Optimized:
 
 - Rect width, periodicity, etc.
 ---
-## Notes
-This setup assumes you have a valid .fsp file with named structures/monitors (structure_group, monitor_2, etc.).
+## ⚠️  **Notes**
+- **You must modify the code to match your own .fsp file structure** — this includes renaming monitors, structures, or sources (e.g., "structure_group", "monitor_2", "source") as used in your own simulation file.
 
-Lumerical must be installed and licensed on the same machine.
+- Lumerical must be installed and licensed on the same machine as MATLAB.
 
-Consider parallelizing for speed: set `UseParallel` in `optimoptions`
+- Consider parallelizing for speed by setting 'UseParallel',true in optimoptions.
 
 ## License
 This project is licensed under the GNU General Public License v3.0 – see the `LICENSE` file for details.
